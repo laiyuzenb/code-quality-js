@@ -1,0 +1,34 @@
+{
+  "name": "code-quality-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "bin": {
+    "code-quality": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "homepage": "https://github.com/laiyuzenb/code-quality-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laiyuzenb/code-quality-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cli-spinner": "^0.2.10",
+    "commander": "^8.3.0",
+    "eslint": "^7.31.0",
+    "glob": "^7.2.0",
+    "ignore": "^5.2.0",
+    "lodash": "^4.17.21",
+    "signale": "^1.4.0",
+    "table": "^6.7.5"
+  }
+}
