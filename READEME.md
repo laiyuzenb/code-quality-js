@@ -2,7 +2,7 @@
 
 ## 安装
 ```javascript
-yarn global add code-quality-report
+yarn global add code-quality-censor
 ```
 
 ## 使用

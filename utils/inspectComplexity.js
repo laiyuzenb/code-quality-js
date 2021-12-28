@@ -6,10 +6,9 @@ const eslint = require("eslint");
 const scanFile = require("./scanFile");
 
 const { CLIEngine } = eslint;
-
 const cli = new CLIEngine({
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 6,
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,

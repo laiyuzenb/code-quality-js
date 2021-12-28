@@ -102,7 +102,7 @@ module.exports = async function scan(param) {
   const { ignoreRules, ignoreFileName } = param;
 
   const ignorePatterns = await loadIgnorePatterns(ignoreFileName);
-  const files = glob.sync("./**/*.js{,x}");
+  const files = glob.sync("./**/*.?(js|vue|jsx)");
   const result = filterFilesByIgnore(files, ignorePatterns, ignoreRules);
 
   return result;
