@@ -1,15 +1,17 @@
 #!/usr/bin/env node
-
 const { Command } = require("commander");
 const complexity = require("./complexity");
+const package = require("../package.json");
 
+const version = package.version;
 const program = new Command();
 
+// 设置默认node和babel环境变量 防止报错 阻拦了后面的检查问题
 process.env.NODE_ENV = "development";
 process.env.BABEL_ENV = "development";
 const main = () => {
   program
-    .version("0.0.1", "-v, --version", "输出版本号")
+    .version(version, "-v, --version", "输出版本号")
     .option("-max, --max [max]", "设置最大圈层复杂度", (v) => {
       return Number(v);
     })

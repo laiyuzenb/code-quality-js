@@ -21,14 +21,7 @@ const _median = (arr) => {
  */
 const complexity = async ({ max = 15 }) => {
   logger.loading("正在执行代码复杂度检测...");
-  const inspectParam = {
-    rootPath: "",
-    defalutIgnore: true,
-    ignoreFileName: ".gitignore",
-    ignoreRules: ["node_modules"],
-    extensions: "**/*.?(js|vue|jsx)",
-    max,
-  };
+  const inspectParam = { max };
   const inspectResult = await inspectComplexity(inspectParam);
   const { fileCount, funcCount, result, complexityList } = inspectResult;
 
